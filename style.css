@@ -108,7 +108,7 @@ main {
     color: rgb(180, 180, 180);
     font-family: "Montserrat", sans-serif;
     border-bottom: solid 5px rgb(180, 180, 180);
-    transition: all 1s;
+    transition: 0.1s;
 }
 
 .thumbnails:hover, .banners:hover, .logos:hover {
