@@ -15,7 +15,8 @@ nav {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
+    z-index: 2;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -30,41 +31,91 @@ nav > div {
 .nav-portfolio {
     text-decoration: none;
     font-size: 25px;
-    color: gray;
-    transition: 0.1s;
+    color: white;
+    transition: .1s;
 }
 
 .nav-portfolio:hover {
-    color: white;
+    color: rgb(126,0,255);
 }
 
 .nav-onas {
     text-decoration: none;
     font-size: 25px;
     color: white;
-    transition: 0.1s;
+    transition: .1s;
 }
 
 .nav-onas:hover {
-    color: gray;
+    color: rgb(126,0,255);
 }
 
 .nav-kontakt {
+    width: 200px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 100px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-decoration: none;
-    font-size: 25px;
-    color: white;
-    background-color: gray;
-    padding: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
+    border: none;
+    background-size: 300% 100%;
     border-radius: 50px;
-    margin-right: 60px;
-    transition: 0.1s;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .nav-kontakt:hover {
-    color: rgb(0, 205, 220);
-    background-color: white;
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.nav-kontakt:focus {
+    outline: none;
+}
+
+.nav-kontakt.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 3px 30px 0 rgba(65, 132, 234, 0.2);
+}
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+}
+
+.nav-arrow {
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    display: flex;
+}
+
+.arrow:hover > .nav-arrow {
+    display: none;
+}
+
+.nav-arrow-hover {
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    display: none;
+}
+
+.arrow:hover > .nav-arrow-hover {
+    display: flex;
+}
+
+.nav-arrow > img, .nav-arrow-hover > img{
+    width: 60px;
 }
 
 main {
@@ -78,16 +129,32 @@ main {
     background-color: rgb(20, 30, 35);
     display: flex;
     align-items: center;
+}
+
+.introduce {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-}
-
-.box1 video {
+    align-items: center;
+    gap: 200px;
     width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
 }
 
-.img-logo {
-    width: 300px;
+.box1 > video {
+    width: 100%;
+    top: 0;
+}
+
+.bg-img {
+    width: 100%;
     position: absolute;
+}
+
+.logo-img {
+    width: 400px;
 }
 
 .box2 {
@@ -127,9 +194,13 @@ main {
 }
 
 .box3 {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    background-color: rgb(20, 30, 35);
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(354deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 48%, rgba(13,13,13,1) 100%);
+    background: -webkit-linear-gradient(354deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 48%, rgba(13,13,13,1) 100%);
+    background: linear-gradient(354deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 48%, rgba(13,13,13,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0d0d0d",GradientType=1);
     display: flex;
     align-items: center;
     justify-content: center;
