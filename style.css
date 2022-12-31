@@ -95,7 +95,7 @@ nav > div {
 
 .nav-kontakt.color-9 {
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 3px 30px 0 rgba(65, 132, 234, 0.2);
+    box-shadow: 0 3px 20px 0 rgba(65, 132, 234, 0.1);
 }
 
 .arrow {
@@ -143,18 +143,7 @@ main {
     background-color: rgb(20, 30, 35);
     display: flex;
     align-items: center;
-}
-
-.introduce {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    gap: 200px;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 1;
 }
 
 .box1 > video {
@@ -163,6 +152,7 @@ main {
 }
 
 .logo-img {
+    position: absolute;
     width: 400px;
 }
 
