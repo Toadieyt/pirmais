@@ -5,6 +5,7 @@
         <title>Pirmais</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="#" sizes="16x16" type="image/png">
+        <script src="script.js"></script>
     </head>
     <body>
         <nav id="top">
@@ -12,7 +13,7 @@
                 <a class="nav-portfolio" href="#">PORTFOLIO</a>
                 <a class="nav-onas" href="#">O NAS</a>
             </div>
-            <a class="nav-kontakt color-9" href="#">KONTAKT</a>
+            <a class="nav-kontakt color" href="#">KONTAKT</a>
             <div class="arrow">
                 <a class="nav-arrow" href="#top"><img src="images/arrow.png"></a>
                 <a class="nav-arrow-hover" href="#top"><img src="images/arrow-hover.png"></a>
@@ -20,16 +21,17 @@
         </nav>
         
         <main>
-            <div class="box1">
+
                 <video autoplay loop muted>
                     <source src="images/video.mp4">
                 </video>
                 <img class="logo-img" src="images/logo_png.png" alt="PIRMAIS">
-            </div>
+
             <div class="box2">
                 <div class="thumbnails">
                     <p>Miniaturki</p>
-                    <div class="scroll">
+                    <input class="button-show color" type="button" name="answer" value="Pokaż" onclick="showDiv('scroll')" />
+                    <div class="scroll" id="scroll">
                         <img src="images/info.png">
                         <img src="images/info.png">
                         <img src="images/info.png">
@@ -40,9 +42,27 @@
                 </div>
                 <div class="banners">
                     <p>Bannery</p>
+                    <input class="button-show color" type="button" name="answer" value="Pokaż" onclick="showDiv('scroll2')" />
+                    <div class="scroll" id="scroll2">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                    </div>
                 </div>
                 <div class="logos">
                     <p>Loga</p>
+                    <input class="button-show color" type="button" name="answer" value="Pokaż" onclick="showDiv('scroll3')" />
+                    <div class="scroll" id="scroll3">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                        <img src="images/info.png">
+                    </div>
                 </div>
             </div>
             <div class="box3">
