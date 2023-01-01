@@ -191,6 +191,11 @@ video {
     display: none;
 }
 
+.banners .scroll img, .thumbnails .scroll img {
+    width: 800px;
+    height: 450px;
+}
+
 .button-show {
     width: 200px;
     font-size: 20px;
