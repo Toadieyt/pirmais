@@ -103,34 +103,18 @@ nav > div {
     width: 100px;
     height: 100px;
     position: fixed;
-    right: 40px;
-    bottom: 30px;
+    right: 30px;
+    bottom: 20px;
+    color: #04befe;
 }
 
-.nav-arrow {
-    position: fixed;
-    right: 40px;
-    bottom: 30px;
-    display: flex;
-}
 
-.arrow:hover > .nav-arrow {
+.arrow:hover img:first-child, .arrow img{
     display: none;
 }
 
-.nav-arrow-hover {
-    position: fixed;
-    right: 40px;
-    bottom: 30px;
-    display: none;
-}
-
-.arrow:hover > .nav-arrow-hover {
+.arrow img:first-child, .arrow:hover img {
     display: flex;
-}
-
-.nav-arrow > img, .nav-arrow-hover > img{
-    width: 60px;
 }
 
 main {
@@ -236,14 +220,29 @@ video {
 .box3 {
     height: 80vh;
     width: 100%;
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(354deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 48%, rgba(13,13,13,1) 100%);
-    background: -webkit-linear-gradient(354deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 48%, rgba(13,13,13,1) 100%);
     background: linear-gradient(354deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 48%, rgba(13,13,13,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0d0d0d",GradientType=1);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+::-webkit-scrollbar{
+    height: 12px;
+    width: 20px;
+    background: rgb(20, 20, 20);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(10, 10, 10);
+}
+
+::-webkit-scrollbar:horizontal{
+    background: rgb(10, 10, 10);
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);;
+    border-radius: 10px;
 }
 
 @media (max-width: 1300px) {
