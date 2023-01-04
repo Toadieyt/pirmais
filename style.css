@@ -136,14 +136,17 @@ video {
     bottom: 90%;
 }
 
-.box2 {
+.box2, .box3 {
     width: 100%;
     background-color: rgb(20, 30, 35);
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-   
+}
+
+.box2 {
+    background-color: black;
 }
 
 .thumbnails, .banners, .logos {
@@ -217,13 +220,37 @@ video {
     box-shadow: 0 3px 20px 0 rgba(65, 132, 234, 0.1);
 }
 
-.box3 {
+.box4 {
     height: 80vh;
     width: 100%;
-    background: linear-gradient(354deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 48%, rgba(13,13,13,1) 100%);
+    background: rgb(5,10,14);
+    background: linear-gradient(354deg, rgba(5,10,14,1) 0%, rgba(10,12,13,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.invite {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 30px;
+    align-items: center;
+    background: rgb(10,20,28);
+    background: linear-gradient(354deg, rgba(10,20,28,1) 0%, rgba(19,21,23,1) 100%);
+    width: 500px;
+    height: 320px;
+    color: white;
+}
+
+.invite > .nav-kontakt {
+    margin: 0;
+}
+
+.invite > .nav-kontakt.color {
+    background-image: linear-gradient(to right, rgba(69,104,240,1), rgba(36,52,209,1), rgba(59,94,246,1), rgba(36,52,179,1));
 }
 
 ::-webkit-scrollbar{

@@ -10,10 +10,10 @@
     <body>
         <nav id="top">
             <div>
-                <a class="nav-portfolio" href="#">PORTFOLIO</a>
-                <a class="nav-onas" href="#">O NAS</a>
+                <a class="nav-portfolio" href="#portfolio">PORTFOLIO</a>
+                <a class="nav-onas" href="#onas">O NAS</a>
             </div>
-            <a class="nav-kontakt color" href="#">KONTAKT</a>
+            <a class="nav-kontakt color" href="#kontakt">KONTAKT</a>
             <a href="#top" class="arrow">
                 <img src="https://img.icons8.com/ios-filled/50/FFFFFF/circled-chevron-up.png"/>
                 <img src="https://img.icons8.com/ios/50/FFFFFF/circled-chevron-up.png"/>
@@ -27,8 +27,12 @@
             </video>
             <img class="logo-img" src="images/logo_png.png" alt="PIRMAIS">
 
-            <div class="box2">
-                <div class="thumbnails">
+            <div class="box2" id="onas">
+                <img class="info-img" src="images/info.png" alt="PIRMAIS">
+            </div>
+
+            <div class="box3">
+                <div class="thumbnails" id="portfolio">
                     <p>Miniaturki</p>
                     <input class="button-show color" type="button" name="answer" value="Pokaż" onclick="showDiv('scroll')" />
                     <div class="scroll" id="scroll">
@@ -62,8 +66,12 @@
                     </div>
                 </div>
             </div>
-            <div class="box3">
-                
+            <div class="box4" id="kontakt">
+                <div class="invite">
+                    <img style="width: 100px;" src="images/logo_png.png" alt="PIRMAIS">
+                    <h2>Dołącz do naszego discorda</h2>
+                    <a class="nav-kontakt color" href="https://discord.com/invite/6TD8D53Ppv" target="_blank">Discord</a>
+                </div>    
             </div>
         </main>
 
