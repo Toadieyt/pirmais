@@ -5,7 +5,7 @@ body {
     margin: 0;
     height: 100%;
     box-sizing: border-box;
-    background: rgb(30, 30, 30);
+    background: rgb(5, 5, 8);
 }
 
 nav {
@@ -146,7 +146,7 @@ video {
 }
 
 .box2 {
-    background-color: black;
+    background: url(images/bg-info-image.png);
 }
 
 .thumbnails, .banners, .logos {
@@ -163,15 +163,15 @@ video {
 }
 
 .thumbnails {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(30, 30, 35);
 }
 
 .banners {
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(40, 40, 45);
 }
 
 .logos {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(25, 25, 30);
 }
 
 .scroll {
@@ -223,8 +223,7 @@ video {
 .box4 {
     height: 80vh;
     width: 100%;
-    background: rgb(5,10,14);
-    background: linear-gradient(354deg, rgba(5,10,14,1) 0%, rgba(10,12,13,1) 100%);
+    background: url(images/bg-kontakt-image.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,7 +238,7 @@ video {
     border-radius: 30px;
     align-items: center;
     background: rgb(10,20,28);
-    background: linear-gradient(354deg, rgba(10,20,28,1) 0%, rgba(19,21,23,1) 100%);
+    background: linear-gradient(354deg, rgba(10,12,20,1) 0%, rgba(12,20,35,1) 100%);
     width: 500px;
     height: 320px;
     color: white;
@@ -250,7 +249,7 @@ video {
 }
 
 .invite > .nav-kontakt.color {
-    background-image: linear-gradient(to right, rgba(69,104,240,1), rgba(36,52,209,1), rgba(59,94,246,1), rgba(36,52,179,1));
+    background-image: linear-gradient(to right, rgba(60,100,240,1), rgba(40,50,200,1), rgba(60,100,246,1), rgba(40,50,200,1));
 }
 
 ::-webkit-scrollbar{
@@ -264,12 +263,11 @@ video {
 }
 
 ::-webkit-scrollbar:horizontal{
-    background: rgb(10, 10, 10);
+    background: rgb(20, 20, 25);
 }
 
 ::-webkit-scrollbar-thumb:horizontal{
-    background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);;
-    border-radius: 10px;
+    background: rgb(10, 10, 12);
 }
 
 @media (max-width: 1300px) {
