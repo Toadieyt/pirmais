@@ -22,21 +22,21 @@ nav {
 }
 
 nav > div {
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
 
-.nav-portfolio, .nav-onas {
+.nav-portfolio, .nav-onas, .nav-regulamin {
     font-size: 25px;
     color: white;
     position: relative;
     text-decoration: none;
 }
   
-.nav-portfolio::before, .nav-onas::before {
+.nav-portfolio::before, .nav-onas::before, .nav-regulamin::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -54,7 +54,11 @@ nav > div {
     left: 19px;
 }
 
-.nav-portfolio:hover::before, .nav-onas:hover::before {
+.nav-regulamin::before {
+    left: 16px;
+}
+
+.nav-portfolio:hover::before, .nav-onas:hover::before, .nav-regulamin:hover::before {
     transform-origin: left;
     transform: scaleX(1.25);
     left: -18px;
@@ -63,6 +67,10 @@ nav > div {
 .nav-onas:hover::before {
     transform: scaleX(1.4);
     left: -15px;
+}
+
+.nav-regulamin:hover::before {
+    transform: scaleX(1.21);
 }
 
 .nav-kontakt {
@@ -149,7 +157,7 @@ video {
     background: url(images/bg-info-image.png);
 }
 
-.thumbnails, .banners, .logos {
+.thumbnails, .banners, .logos, .sygnets, .posters {
     width: 100%;
     font-size: 80px;
     color: rgb(180, 180, 180);
@@ -174,6 +182,14 @@ video {
     background-color: rgb(25, 25, 30);
 }
 
+.sygnets {
+    background-color: rgb(30, 30, 35);
+}
+
+.posters {
+    background-color: rgb(40, 40, 45);
+}
+
 .scroll {
     display: none;
 }
@@ -183,7 +199,7 @@ video {
     height: 450px;
 }
 
-.logos .scroll img {
+.logos .scroll img, .sygnets .scroll img, .posters .scroll img {
     width: 400px;
     height: 400px;
 }
@@ -255,15 +271,16 @@ video {
 ::-webkit-scrollbar{
     height: 12px;
     width: 20px;
-    background: rgb(20, 20, 20);
+    background: rgb(15, 15, 20);
 }
 
 ::-webkit-scrollbar-thumb{
-    background: rgb(10, 10, 10);
+    background: rgb(6, 6, 8);
 }
 
 ::-webkit-scrollbar:horizontal{
     background: rgb(20, 20, 25);
+    height: 18px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal{
@@ -274,6 +291,9 @@ video {
     .logo-img {
         width: 300px;
         top: 200px;
+    }
+    nav > div {
+        width: 60%;
     }
 }
 
