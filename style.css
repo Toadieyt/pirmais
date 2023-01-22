@@ -265,7 +265,7 @@ video {
 }
 
 ::-webkit-scrollbar:horizontal{
-    background: black;
+    background: rgb(0, 0, 0, 0.0);
     height: 13px;
 }
 
