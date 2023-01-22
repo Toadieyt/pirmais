@@ -158,18 +158,22 @@ video {
     background: none;
 }
 
+.posters {
+    padding-bottom: 200px;
+}
+
 .thumbnails, .banners, .logos, .sygnets, .posters {
     width: 100%;
-    font-size: 80px;
+    font-size: 50px;
     color: rgb(180, 180, 180);
     font-family: "Montserrat", sans-serif;
     transition: 0.1s;
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     min-height: 500px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .scroll {
