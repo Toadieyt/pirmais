@@ -7,7 +7,7 @@ function showDiv(Div) {
         x.style.scrollSnapType = "x mandatory";
         x.style.overflowX = "auto";
         x.style.marginTop = "80px";
-        x.style.backgroundColor = "rgb(20, 20, 25)";
+        x.style.backgroundColor = "none";
         x.style.paddingTop = "40px";
         x.style.paddingBottom = "40px";
     } else {

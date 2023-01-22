@@ -5,7 +5,6 @@ body {
     margin: 0;
     height: 100%;
     box-sizing: border-box;
-    background: rgb(5, 5, 8);
 }
 
 nav {
@@ -126,8 +125,10 @@ nav > div {
 }
 
 main {
+    width: 100%;
     padding: 0;
     margin: 0;
+    background: url(images/bg-img-full.png);
 }
 
 video {
@@ -136,25 +137,25 @@ video {
 }
 
 .logo-img {
-    text-align: center;
     position: absolute;
+    text-align: center;
     width: 400px;
-    left: 40%;
+    left: 20%;
     top: 300px;
     bottom: 90%;
 }
 
-.box2, .box3 {
+.bg-img {
     width: 100%;
-    background-color: rgb(20, 30, 35);
+}
+
+.box1, .box2, .box3 {
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-}
-
-.box2 {
-    background: url(images/bg-info-image.png);
+    background: none;
 }
 
 .thumbnails, .banners, .logos, .sygnets, .posters {
@@ -168,26 +169,7 @@ video {
     justify-content: flex-start;
     align-items: center;
     min-height: 500px;
-}
-
-.thumbnails {
-    background-color: rgb(30, 30, 35);
-}
-
-.banners {
-    background-color: rgb(40, 40, 45);
-}
-
-.logos {
-    background-color: rgb(25, 25, 30);
-}
-
-.sygnets {
-    background-color: rgb(30, 30, 35);
-}
-
-.posters {
-    background-color: rgb(40, 40, 45);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .scroll {
@@ -269,22 +251,23 @@ video {
 }
 
 ::-webkit-scrollbar{
-    height: 12px;
-    width: 20px;
-    background: rgb(15, 15, 20);
+    height: 0px;
+    width: 0;
+    background: none;
 }
 
-::-webkit-scrollbar-thumb{
-    background: rgb(6, 6, 8);
+::-webkit-scrollbar-thumb:horizontal:hover{
+    background: white;
 }
 
 ::-webkit-scrollbar:horizontal{
-    background: rgb(20, 20, 25);
-    height: 18px;
+    background: black;
+    height: 13px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal{
-    background: rgb(10, 10, 12);
+    background: rgb(30, 30, 30);
+    border-radius: 8px;
 }
 
 @media (max-width: 1300px) {
@@ -294,6 +277,9 @@ video {
     }
     nav > div {
         width: 60%;
+    }
+    .box4 {
+        height: 800px;
     }
 }
 
