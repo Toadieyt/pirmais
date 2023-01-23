@@ -6,10 +6,9 @@ function showDiv(Div) {
         x.style.gap = "30px";
         x.style.scrollSnapType = "x mandatory";
         x.style.overflowX = "auto";
-        x.style.marginTop = "80px";
+        x.style.marginTop = "-200px";
         x.style.backgroundColor = "none";
-        x.style.paddingTop = "40px";
-        x.style.paddingBottom = "40px";
+        x.style.paddingBottom = "30px";
     } else {
         x.style.display = "none";
     }
