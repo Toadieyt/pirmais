@@ -33,7 +33,11 @@
         <main>
             <div class="box1">
                 <img class="logo-img" src="images/logo_png.png" alt="PIRMAIS">
-                <img class="bg-img" src="images/bg-img.png" alt="background">
+                <picture>
+                    <source srcset="images/bg-img-mobile.png" media="(max-width: 1000px)">
+                    <source srcset="images/bg-img.png">
+                    <img class="bg-img" src="images/bg-img.png" alt="background">
+                </picture>           
             </div>
             
             <div class="box2" id="onas">

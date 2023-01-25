@@ -191,7 +191,7 @@ nav > div {
         height: 50px;
         width: 100px;
         text-align: center;
-        line-height: 50px;
+        line-height: 40px;
         border-radius: 50%;
         font-size: 20px;
         cursor: pointer;
@@ -424,12 +424,8 @@ video {
 }
 
 @media (max-width: 1300px) {
-    .logo-img {
-        width: 300px;
-        top: 200px;
-    }
-    nav > div {
-        width: 60%;
+    .bg-img {
+        height: 100vh;
     }
     .box3 {
         gap: 20px;
@@ -445,6 +441,25 @@ video {
     }
 }
 
+@media (max-width: 1280px) {
+    .nav-portfolio, .nav-onas, .nav-regulamin, .nav-kontakt, .menu-text {
+        font-size: 15px;
+    }
+    .nav-kontakt {
+       width: 150px;
+    }
+    .menu-text {
+        margin-left: 0;
+        margin-right: 80px;
+    }
+    .wrapper > a {
+        font-size: 15px;
+    }
+    .wrapper {
+        top: 100px;
+    }
+}
+
 @media (max-width: 1024px) {
     .logo-img {
         width: 250px;
@@ -452,9 +467,63 @@ video {
     }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1000px) {
     .logo-img {
-        width: 200px;
-        top: 200px;
+        width: 300px;
+        top: 20px;
+        left: 20px;
+    }
+    nav {
+        height: 1500px;
+        width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        gap: 100px;
+        left: 5%;
+    }   
+    nav > div {
+        margin-top: 600px;
+        height: 500px;
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 30px;
+    }
+    .nav-portfolio, .nav-onas, .nav-regulamin, .nav-kontakt, .menu-text {
+        font-size: 40px;
+    }
+    .nav-kontakt {
+        width: 300px;
+        margin-right: 0;
+    }
+    .menu-text {
+        margin: 40px;
+    }
+    .menu-btn {
+        top: 2.5%;
+        right: 0;
+    }
+    .menu-btn > span, .menu-btn:before, .menu-btn:after {
+        border-bottom: solid 5px white;
+        width: 60%;
+    } 
+    .wrapper {
+        top: 350px;
+        font-size: 40px;
+        height: 200px;
+        width: 100vw;  
+    }
+    .wrapper > a {
+        font-size: 30px;
+    }
+    .box2 {
+        position: absolute;
+        background: none;
+        top: 65%;
+    }
+
+    .info-img {
+        width: 800px;
     }
 }
