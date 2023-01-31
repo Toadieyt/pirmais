@@ -130,6 +130,10 @@ nav > div {
     display: flex;
 }
 
+picture {
+    width: 100%;
+}
+
     /* menu */
 
     .menu-btn, .close, .wrapper {
