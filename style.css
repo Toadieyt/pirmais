@@ -283,10 +283,7 @@ video {
 .box3 {
     gap: 200px;
     background-color: rgba(0, 0, 0, 0.6);
-}
-
-.posters {
-    padding-bottom: 200px;
+    padding-bottom: 400px;
 }
 
 .thumbnails, .banners, .logos, .sygnets, .posters {
